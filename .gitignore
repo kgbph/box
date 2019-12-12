@@ -1,0 +1,5 @@
+*
+!.gitignore
+!setup.bat
+!update.bat
+!Vagrantfile
