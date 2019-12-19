@@ -1,2 +1,6 @@
 # Auto-generated directories
 .vagrant
+
+# User directories
+data/*
+projects/*
