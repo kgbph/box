@@ -1,6 +1,2 @@
-*
-!.gitignore
-!README.md
-!setup.bat
-!update.bat
-!Vagrantfile
+# Auto-generated directories
+.vagrant
