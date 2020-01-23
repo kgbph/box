@@ -21,6 +21,7 @@ All-in-one development environment
 |53  |TCP |DNS     |
 |53  |UDP |DNS     |
 |80  |TCP |HTTP    |
+|443 |TCP |HTTPS   |
 
 ## Regular operations
 
