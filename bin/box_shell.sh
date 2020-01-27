@@ -1,3 +1,4 @@
 #!/bin/sh
 
-/vagrant/devilbox/shell.sh
+cd /vagrant/devilbox
+./shell.sh
