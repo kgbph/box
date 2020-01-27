@@ -1,3 +1,3 @@
 @ECHO OFF
 
-vagrant ssh -c "cd /vagrant/devilbox && docker-compose restart"
+vagrant ssh -c "/vagrant/bin/box_restart.sh"

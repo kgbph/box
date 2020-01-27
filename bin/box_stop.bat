@@ -1,3 +1,3 @@
 @ECHO OFF
 
-vagrant ssh -c "cd /vagrant/devilbox && docker-compose stop"
+vagrant ssh -c "/vagrant/bin/box_stop.sh"
