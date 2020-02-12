@@ -9,6 +9,7 @@ All-in-one development environment
 - `Devilbox` - LAMP stack management
 
 ## Folder structure
+- `bin` - Commands for operating the box
 - `config` - Contains default configuration files
 - `data` - Contains user configuration files
 - `devilbox` - Devilbox submodule
@@ -22,6 +23,43 @@ All-in-one development environment
 |53  |UDP |DNS     |
 |80  |TCP |HTTP    |
 |443 |TCP |HTTPS   |
+
+## Available commands
+
+### Start devilbox
+``` sh
+bin/box_start
+```
+
+### Stop devilbox
+``` sh
+bin/box_stop
+```
+
+### Restart devilbox
+``` sh
+bin/box_restart
+```
+
+### Reload devilbox configurations
+``` sh
+bin/box_reload
+```
+
+### Open devilbox PHP shell
+``` sh
+bin/box_shell
+```
+
+### List available project configurations
+``` sh
+bin/project_list
+```
+
+### Switch project configuration
+``` sh
+bin/project_switch <project_name>
+```
 
 ## Regular operations
 
@@ -86,6 +124,9 @@ Ensure that the following tasks are done
 
 **How to I change LAMP stack version?**
 > Edit `devilbox/.env` file then restart docker containers
+
+**How do I implement HTTPS?**
+> Import the Certificate Authority into your browser and you are all set.
 
 ## External resources
 - https://www.vagrantup.com/docs/index.html
