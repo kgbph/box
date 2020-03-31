@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
 
   # Sync folder
-  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  config.vm.synced_folder ".", "/vagrant", type: "nfs"
 
   # Configure forwarded ports
   config.vm.network "forwarded_port", guest: 53, host: 53, protocol: "tcp"
@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 443, host: 443
 
   # Configure private network
-  # config.vm.network "private_network", ip: "192.168.100.100"
+  config.vm.network "private_network", type: "dhcp"
 
   # Configure public network
   # config.vm.network "public_network", use_dhcp_assigned_default_route: true
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
   # Define plugins
   config.vagrant.plugins = [
     "vagrant-docker-compose",
-    "vagrant-vbguest"
+    "vagrant-winnfsd"
   ]
 
   # Virtualbox configuration
