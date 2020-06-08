@@ -1,5 +1,5 @@
 # Developer Box
-All-in-one development environment
+Basic LAMP stack development environment
 
 [![License](https://img.shields.io/github/license/kgbph/box.svg?style=popout)](https://github.com/kgbph/box/blob/master/LICENSE)
 
@@ -9,12 +9,13 @@ All-in-one development environment
 - `Devilbox` - LAMP stack management
 
 ## Folder structure
-- `bin` - Commands for operating the box
-- `config` - Contains default configuration files
-- `data` - Contains user configuration files
+- `bin` - Box operation scripts
+- `config` - Default configuration files
+- `data` - User configuration files
 - `devilbox` - Devilbox submodule
-- `projects` - User projects location
-- `provisioner` - Contains provisioner scripts
+- `projects` - User projects
+- `sbin` - Internal operation scripts
+- `provisioner` - Internal provisioner scripts
 
 ## Forwarded ports
 |Port|Type|Protocol|
@@ -28,37 +29,37 @@ All-in-one development environment
 
 ### Start devilbox
 ``` sh
-bin/box_start
+bin/box/start
 ```
 
 ### Stop devilbox
 ``` sh
-bin/box_stop
+bin/box/stop
 ```
 
 ### Restart devilbox
 ``` sh
-bin/box_restart
+bin/box/restart
 ```
 
 ### Reload devilbox configurations
 ``` sh
-bin/box_reload
+bin/box/reload
 ```
 
 ### Open devilbox PHP shell
 ``` sh
-bin/box_shell
+bin/box/shell
 ```
 
 ### List available project configurations
 ``` sh
-bin/project_list
+bin/project/list
 ```
 
 ### Switch project configuration
 ``` sh
-bin/project_switch <project_name>
+bin/project/switch <project_name>
 ```
 
 ## Regular operations
